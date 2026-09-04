@@ -88,6 +88,7 @@ DIO_ERRORStatus DIO_EnumGetPinValue (u8 copy_u8PORT, u8 copy_u8PIN , u8 *copy_Pt
 		{
 			LOC_Status=DIO_NOK;
 		}
+		return LOC_Status;
 }
 DIO_ERRORStatus DIO_EnumTogglePinValue  (u8 copy_u8PORT, u8 copy_u8PIN )
 {
@@ -107,6 +108,7 @@ DIO_ERRORStatus DIO_EnumTogglePinValue  (u8 copy_u8PORT, u8 copy_u8PIN )
 		{
 			LOC_Status=DIO_NOK;
 		}
+		return LOC_Status;
 }
 void DIO_VoidSetPortDirection (u8 copy_u8PORT, u8 copy_u8Direction)
 {
